@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+$navStartSize:200px;
+$navHoveredScale:2;
+$mainNavColor:#808e9b;//#636e72
+$extendNavColor:#b2bec3;
+$hoverNavLinks: #3c40c6;
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+
+nav{
+    
+    padding: 0;
+    margin: 0;
+    
+}
+%extendNavHover{
+    width: $navStartSize*$navHoveredScale;
+    height: $navStartSize*$navHoveredScale;
+    border: 1px solid black;
+}
+#mainNav{
+    position: absolute;
+    cursor: pointer;
+
+
+    width: $navStartSize;
+    height: $navStartSize;
+
+    background: $mainNavColor;
+    background-blend-mode: multiply;
+
+    border-radius: 100%;
+
+    -ms-flex-line-pack: center;
+        align-content: center;
+
+    vertical-align: middle;
+
+    -webkit-transform: translate(-45%,-45%);
+    -ms-transform: translate(-45%,-45%);
+    transform: translate(-45%,-45%);
+
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+
+    -webkit-box-shadow: 0 0 2px 2px black;
+            box-shadow: 0 0 2px 2px black;    
+        
+    img{
+        position: absolute;
+    
+        width: 100px;
+        height: 100px;
+
+        right: 10%;
+        bottom: 10%;
+
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }       
+    z-index: 1;
+
+    &:hover{
+        & + #extNav{        
+            @extend %extendNavHover;
+        }
+    }
+}
+
+#about, #projects{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: middle;
+    -ms-flex-line-pack: center;
+        align-content: center;
+
+    i{
+        margin-right: 5px;
+    }
+}
+
+#extNav{
+    position: relative;
+
+    width: 0;
+    height: 0;
+
+
+    background-color: $extendNavColor;
+    border-radius: 100%;
+
+    top:0;
+    left: 0;
+
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+
+    z-index: 0;
+
+
+    #projects{
+        position: absolute;
+        bottom: 12%;
+        right: 20%;
+        
+    }
+    #about{
+        position: absolute;
+        top: 60%;
+        right: 5%;
+    }
+    div:hover{
+        cursor: pointer;
+
+        color: $hoverNavLinks;
+    }
+
+    &:hover{
+        @extend %extendNavHover;
+    }
+}
+

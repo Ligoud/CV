@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import './extends';
+
+$borderWidth:3px;   //Ширина границы карточек
+$contentH:400px;    //Высота карточки
+$contentW:400px;    //Ширина карточки   
+$legendH:30px;      //Высота заголовка карточки
+
+#aboutCurrentProject{
+    position: absolute;
+
+    top:10%;
+    right: 15%;
+    width: $contentW;
+    height: $contentH;
+}
+#aboutProjectTechnologies{
+    position: absolute;
+
+    top:110%;
+    left: 15%;
+    width: $contentW;
+    height: $contentH;
+}
+fieldset{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+
+    border: $borderWidth solid;
+    border-image-slice: 1;        
+    border-image-source: linear-gradient(to top, black, transparent 90%);
+
+    padding:0;
+    
+    overflow: hidden;
+
+    legend{            
+        height: $legendH;
+        line-height: $legendH;
+        width: 100%;
+        border-top: 1px solid black;
+        border-radius: 80%;
+        //font
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+    .cardBg{
+        position: relative;
+        width: 100%;
+        height: 100%;
+       
+
+        background: linear-gradient(to top,white,transparent);     
+        .textField{
+            margin: auto;
+            min-height: 90%;
+            min-width: 90%; 
+            
+            margin-top: 20px;
+            padding: 10px;
+            //font
+            
+            font-weight: 500;
+            line-height: 2rem;
+            //
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            //
+            white-space: pre-wrap;
+        }
+    }
+}
