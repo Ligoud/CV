@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CV/static/css/main.0c790d53.chunk.css",
+    "main.js": "/CV/static/js/main.0f625e75.chunk.js",
+    "main.js.map": "/CV/static/js/main.0f625e75.chunk.js.map",
+    "runtime-main.js": "/CV/static/js/runtime-main.4d0d12ac.js",
+    "runtime-main.js.map": "/CV/static/js/runtime-main.4d0d12ac.js.map",
+    "static/js/2.ba2ac6cf.chunk.js": "/CV/static/js/2.ba2ac6cf.chunk.js",
+    "static/js/2.ba2ac6cf.chunk.js.map": "/CV/static/js/2.ba2ac6cf.chunk.js.map",
+    "index.html": "/CV/index.html",
+    "precache-manifest.c3ea7e21941f84eff242c8bdb22b28bf.js": "/CV/precache-manifest.c3ea7e21941f84eff242c8bdb22b28bf.js",
+    "service-worker.js": "/CV/service-worker.js",
+    "static/css/main.0c790d53.chunk.css.map": "/CV/static/css/main.0c790d53.chunk.css.map",
+    "static/js/2.ba2ac6cf.chunk.js.LICENSE.txt": "/CV/static/js/2.ba2ac6cf.chunk.js.LICENSE.txt",
+    "static/media/background.scss": "/CV/static/media/Pines&Mountains.6e918813.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d0d12ac.js",
+    "static/js/2.ba2ac6cf.chunk.js",
+    "static/css/main.0c790d53.chunk.css",
+    "static/js/main.0f625e75.chunk.js"
+  ]
+}
