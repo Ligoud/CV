@@ -2,7 +2,8 @@ import React from 'react'
 
 import '../scss/content.scss'
 
-const {CustomAnimations}=require('../js/animateContent.js')
+// const {CustomAnimations}=require('../js/animateContent.js')
+import CustomAnimations from '../js/animateContent.js'
 
 export default class Content extends React.Component{
     constructor(props){

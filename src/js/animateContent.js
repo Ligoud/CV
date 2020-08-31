@@ -1,5 +1,5 @@
 
-class CustomAnimations{
+export default class CustomAnimations{
     constructor(projectInfoRef){
         //
         this.typeText=this.typeText.bind(this)
@@ -54,4 +54,4 @@ class CustomAnimations{
     }
 }
 
-module.exports.CustomAnimations= CustomAnimations;
+// module.exports.CustomAnimations= CustomAnimations;
