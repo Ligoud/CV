@@ -1,0 +1,35 @@
+$contentH: 400px; //Высота карточки
+$contentW: 400px; //Ширина карточки
+
+#mainPageArticle {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  z-index: -5;
+}
+
+#aboutCurrentProject {
+  position: absolute;
+
+  top: 10%;
+  right: 15%;
+  width: $contentW;
+  height: $contentH;
+
+  z-index: -5;
+}
+
+#aboutProjectTechnologies {
+  position: absolute;
+
+  top: 110%;
+  left: 15%;
+  width: $contentW;
+  height: $contentH;
+
+  z-index: -5;
+}
