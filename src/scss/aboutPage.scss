@@ -13,6 +13,7 @@ $miniImageWidth: 100px;
 $miniImagePadding: 3px;
 $miniImageBorder: 1px;
 //
+
 body {
   overflow-y: scroll;
 }
@@ -22,16 +23,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  //
   height: 100%;
   width: 100%;
-  //
   & > div {
     position: relative;
     overflow: scroll;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     padding: 150px 10% 0 10%;
@@ -41,8 +49,9 @@ body {
 }
 
 #personalInfo {
+  -webkit-box-flex: 3;
+  -ms-flex-positive: 3;
   flex-grow: 3;
-  //
   height: $pInfoH;
   width: $pInfoW;
   min-width: $carMindWidth;
@@ -57,9 +66,9 @@ body {
 #photoSection {
   margin-right: 10%;
   margin-top: 5%;
-  //
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
-  //
   height: 0;
 
   figure {
@@ -71,6 +80,7 @@ body {
       border-radius: 10px;
       border: $imageBorder solid black;
       padding: $imagePadding;
+      -webkit-box-shadow: 0 0 1px 1px rgb(102, 102, 102);
       box-shadow: 0 0 1px 1px rgb(102, 102, 102);
     }
   }
@@ -102,8 +112,8 @@ body {
         border-radius: 10px;
         border: $miniImageBorder solid black;
         padding: $miniImagePadding;
+        -webkit-box-shadow: 0 0 1px 1px rgb(102, 102, 102);
         box-shadow: 0 0 1px 1px rgb(102, 102, 102);
-        // box-shadow: none;
       }
       figcaption {
         display: none;
@@ -111,10 +121,11 @@ body {
     }
   }
   #aboutPageArticle > div {
-    // top: 0;
-    // margin-top: 0;
     padding-top: 50px;
     padding-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }

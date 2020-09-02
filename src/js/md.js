@@ -5,9 +5,7 @@ export default class MdConverter {
   }
 
   async getHtml(fileName) {
-    console.log(fileName);
     let path = require(`../textData/${fileName}`);
-    console.log(path);
     let text;
     let prom = new Promise((res, rej) => {
       fetch(path)

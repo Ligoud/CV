@@ -15,14 +15,10 @@ export default class ProjectsPage extends React.Component {
     this.md = new MdConverter();
   }
   async handleClick(event) {
-    // ev.persist();
-    // let ev = event;
     let target = event.currentTarget;
     //
     let projId = target.getAttribute("data-id");
-    console.log(1);
     let projectText = await this.md.getHtml(projId + ".md");
-    console.log(2);
     let card = document.querySelector("#projectsPage > div");
     //
 
@@ -35,8 +31,10 @@ export default class ProjectsPage extends React.Component {
     projectBody.style.animationPlayState = "running";
     //
   }
-  // ! ДОДЕЛАТЬ Это
-  handleBack() {}
+  //
+  handleBack(event) {
+    this.forceUpdate();
+  }
   render() {
     let jsonList = require("../../textData/projects.json");
     let list = [];
@@ -55,7 +53,7 @@ export default class ProjectsPage extends React.Component {
     });
 
     return (
-      <React.Fragment>
+      <React.Fragment key={new Date()}>
         <article id="projectsPage">
           <div ref={this.card} className="hideScrollBar">
             <div className="detailedProj hideScrollBar" hidden>

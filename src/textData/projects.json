@@ -1,6 +1,6 @@
 [
   {
-    "id": "websocket",
+    "id": "roflochat",
     "name": "Чат-бот на websocket"
   },
   {
@@ -8,12 +8,8 @@
     "name": "Чат-бот офис-менеджер"
   },
   {
-    "id": "roflochat",
-    "name": "Расширение для Twitch"
-  },
-  {
     "id": "twitchextension",
-    "name": "Сайт weblogoped"
+    "name": "Расширение для Twitch"
   },
   {
     "id": "weblog",
@@ -26,5 +22,13 @@
   {
     "id": "prettycomponents",
     "name": "Проект PrettyComponents"
+  },
+  {
+    "id": "cv",
+    "name": "Карточка CV"
+  },
+  {
+    "id": "discordgm",
+    "name": "Игровой чат-бот для каналов в дискорде"
   }
 ]

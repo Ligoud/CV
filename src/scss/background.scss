@@ -1,25 +1,22 @@
+#moveBg {
+  margin: 0;
+  position: absolute;
+  width: 100%;
 
-#moveBg{
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    // height: 200vh;
-    // background-color: rgb(255, 222, 36);
-    
-    left: 0;
-    top: 0;
-    z-index: -10;
+  left: 0;
+  top: 0;
+  z-index: -10;
 }
-#staticBg{
-    position: fixed;
+#staticBg {
+  position: fixed;
 
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -9;
-    background-image: url('../publicFiles/Pines&Mountains.svg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -9;
+  background-image: url("../publicFiles/Pines&Mountains.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
