@@ -1,8 +1,18 @@
-$pInfoH: 600px;
-$pInfoW: 400px;
-$cardWidth: 400px;
-$calcHeigh: calc(100vh - 150px);
-
+$pInfoH: 600px; //card info height
+$pInfoW: 40%; //card info width
+$carMindWidth: 400px; //min width
+$calcHeigh: calc(100% - 150px); //Высота aboutArticle
+//Image
+$imageHeigh: 300px;
+$imageWidth: 300px;
+$imagePadding: 10px;
+$imageBorder: 1px;
+//Mini Image
+$miniImageHeigh: 100px;
+$miniImageWidth: 100px;
+$miniImagePadding: 3px;
+$miniImageBorder: 1px;
+//
 body {
   overflow-y: scroll;
 }
@@ -13,12 +23,10 @@ body {
   top: 0;
   left: 0;
   //
-  // height: 80vh;
-  // width: 90vw;
+  height: 100%;
+  width: 100%;
   //
-
-  // border: 1px solid black;
-  div {
+  & > div {
     position: relative;
     overflow: scroll;
 
@@ -26,39 +34,87 @@ body {
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 150px 5% 0 5%;
+    padding: 150px 10% 0 10%;
+
+    height: $calcHeigh;
   }
 }
 
 #personalInfo {
-  // position: relative;
-  display: block;
+  flex-grow: 3;
   //
   height: $pInfoH;
   width: $pInfoW;
-  min-width: $cardWidth;
-  //
-  // margin: 0 0 0 auto;
-  border: 1px solid black;
-}
-#photoSection {
-  figure {
+  min-width: $carMindWidth;
+  max-width: $carMindWidth * 2;
+
+  .textField * {
+    line-height: 1.1rem;
+
     margin: 0;
   }
+}
+#photoSection {
+  margin-right: 10%;
+  margin-top: 5%;
+  //
+  flex-grow: 1;
+  //
+  height: 0;
+
+  figure {
+    width: calc(#{$imageWidth} + #{$imagePadding}* 2 + #{$imageBorder}* 2);
+    margin: 0;
+    img {
+      height: $imageHeigh;
+      width: $imageWidth;
+      border-radius: 10px;
+      border: $imageBorder solid black;
+      padding: $imagePadding;
+      box-shadow: 0 0 1px 1px rgb(102, 102, 102);
+    }
+  }
   figcaption {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
 }
-@media screen and (max-width:#{$cardWidth * 2}) {
+@media screen and (max-width:#{$carMindWidth * 2}) {
   #personalInfo,
   #photoSection {
-    // display: block;
-    top: 0;
-    right: auto;
     margin: auto;
   }
-  #aboutPageArticle {
+  #personalInfo {
+    height: 300px;
+  }
+  #photoSection {
+    figure {
+      width: calc(
+        #{$miniImageWidth} + #{$miniImagePadding}* 2 + #{$miniImageBorder}* 2
+      );
+      margin: 0;
+      img {
+        height: $miniImageHeigh;
+        width: $miniImageWidth;
+        border-radius: 10px;
+        border: $miniImageBorder solid black;
+        padding: $miniImagePadding;
+        box-shadow: 0 0 1px 1px rgb(102, 102, 102);
+        // box-shadow: none;
+      }
+      figcaption {
+        display: none;
+      }
+    }
+  }
+  #aboutPageArticle > div {
     // top: 0;
-    margin-top: 0;
+    // margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
     flex-direction: column;
   }
 }

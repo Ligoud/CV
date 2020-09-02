@@ -1,0 +1,135 @@
+#projectsPage {
+  z-index: -5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //
+  height: 100%;
+  width: 100%;
+  //
+  & > div {
+    position: relative;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    // opacity: 0.7;
+
+    margin: 150px auto 0 auto;
+
+    height: 700px;
+    max-width: 50%;
+    //
+    overflow: hidden;
+
+    //
+    // * animation
+    //
+    animation-name: turn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    //
+
+    ul.mainList {
+      //   display: none;
+      list-style-type: none;
+      padding-left: 5%;
+      padding-right: 5%;
+      li {
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        //
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid black;
+        .botBorder {
+          position: absolute;
+          border-bottom: 1px dotted black;
+          width: 90%;
+          left: 5%;
+          bottom: 0;
+        }
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.7);
+          .botBorder {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .detailedProj {
+      opacity: 0;
+      margin: 5%;
+      margin-top: 2%;
+      //   margin-bottom: 0;
+      //   padding-bottom: 5%;
+      height: 93%;
+      transform: rotateY(180deg);
+      color: black;
+
+      //animate
+      animation-name: appear;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-play-state: paused;
+      .back {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 51px); //summof width/2 and borderWidth
+        // left: 50%;
+        border: 1px solid gray;
+        border-radius: 5%;
+        padding-left: 5px;
+        height: 40px;
+        width: 100px;
+
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.479);
+        }
+      }
+      .text {
+        // border: 1px solid black;
+        padding-left: 10px;
+        padding-right: 5px;
+        height: 90%;
+        max-height: 90%;
+        overflow-y: scroll;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+@keyframes turn {
+  from {
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+//
+//Для тех, у кого h<900
+@media screen and (max-width: 900) {
+}

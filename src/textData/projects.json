@@ -1,0 +1,30 @@
+[
+  {
+    "id": "websocket",
+    "name": "Чат-бот на websocket"
+  },
+  {
+    "id": "ofm",
+    "name": "Чат-бот офис-менеджер"
+  },
+  {
+    "id": "roflochat",
+    "name": "Расширение для Twitch"
+  },
+  {
+    "id": "twitchextension",
+    "name": "Сайт weblogoped"
+  },
+  {
+    "id": "weblog",
+    "name": "Сайт weblogoped"
+  },
+  {
+    "id": "adptvtest",
+    "name": "Тестирующая система"
+  },
+  {
+    "id": "prettycomponents",
+    "name": "Проект PrettyComponents"
+  }
+]

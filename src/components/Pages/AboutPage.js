@@ -2,11 +2,18 @@ import React from "react";
 
 import "../../scss/aboutPage.scss";
 
+import MdConverter from "../../js/md";
+
 export default class AboutPage extends React.Component {
   constructor(props) {
     super(props);
+    this.about = React.createRef();
   }
-
+  async componentDidMount() {
+    let md = new MdConverter();
+    let text = await md.getHtml("aboutMe.md");
+    this.about.current.innerHTML = text;
+  }
   render() {
     return (
       <React.Fragment>

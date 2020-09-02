@@ -11,7 +11,7 @@ export default class MainPage extends React.Component {
     this.about = React.createRef();
     this.project = React.createRef();
 
-    this.infoText = require("../../js/txtinfo.json");
+    this.infoText = require("../../textData/txtinfo.json");
   }
 
   startTypingInfo = (type) => {
@@ -20,8 +20,10 @@ export default class MainPage extends React.Component {
       case "about":
         txt = this.infoText.aboutInfo;
         break;
+      default:
+        break;
     }
-    this.animate.typeText(0, txt, this.about.current);
+    this.animate.typeText(0, txt, this.about.current, 0);
   };
 
   componentDidMount() {

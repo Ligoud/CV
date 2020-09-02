@@ -31,6 +31,7 @@ export default class Content extends React.Component {
       <React.Fragment>
         {chosenContent}
         {/* <MainPage /> */}
+        {/* <ProjectsPage /> */}
       </React.Fragment>
     );
   }

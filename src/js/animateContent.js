@@ -1,24 +1,35 @@
 export default class CustomAnimations {
-  constructor(projectInfoRef) {
+  // * projectInfoRef это для мейнпейджа анимирование элемента.
+  // ! ОООООЧень кастыльно. Потом исправить
+  constructor(projectInfoRef = "") {
     //
     this.typeText = this.typeText.bind(this);
-    //
+    //bind funcs
     this.scrolling = this.scrolling.bind(this);
     this.isObjectInViewport = this.isObjectInViewport.bind(this);
     this.isObjectpartiallyInViewport = this.isObjectpartiallyInViewport.bind(
       this
     );
     //
-    this.pRef = projectInfoRef;
-    this.writeOnceInViewPort = true; // true если еще надо отрисовать. Название переменной дерьмо
+    // this.timeout = timeout;
+    //
+    if (projectInfoRef) {
+      this.pRef = projectInfoRef;
+      this.writeOnceInViewPort = true; // true если еще надо отрисовать. Название переменной дерьмо
 
-    document.onscroll = this.scrolling;
+      document.onscroll = this.scrolling;
+    }
   }
 
   scrolling(e) {
     if (this.isObjectInViewport(this.pRef) && this.writeOnceInViewPort) {
       this.writeOnceInViewPort = false;
-      this.typeText(0, require("./txtinfo.json").projectInfo, this.pRef);
+      this.typeText(
+        0,
+        require("../textData/txtinfo.json").projectInfo,
+        this.pRef,
+        50
+      );
     }
   }
 
@@ -40,16 +51,16 @@ export default class CustomAnimations {
     return top + height >= 0 && height + window.innerHeight >= bottom;
   }
 
-  typeText(ind, text, textField) {
-    // console.log(ind,text,textField)
+  typeText(ind, text, textField, timeout) {
+    if (textField) {
+      let currentLetter = text[ind];
+      let prevText = textField.textContent;
 
-    let currentLetter = text[ind];
-    let prevText = textField.textContent;
-    textField.innerHTML = prevText + currentLetter;
-    ind++;
+      textField.innerHTML = prevText + currentLetter;
+      ind++;
 
-    if (ind < text.length) setTimeout(this.typeText, 50, ind, text, textField);
+      if (ind < text.length)
+        setTimeout(this.typeText, timeout, ind, text, textField, timeout);
+    }
   }
 }
-
-// module.exports.CustomAnimations= CustomAnimations;

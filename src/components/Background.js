@@ -5,7 +5,6 @@ import "../scss/background.scss";
 export default class Background extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props.heightInPages, " is height");
     this.state = {
       color: `linear-gradient(${this.getGradients(this.props.linearGradient)})`,
       height:
@@ -13,7 +12,6 @@ export default class Background extends React.Component {
           ? this.props.heightInPages
           : this.props.heightInPages * 100 + "vh",
     };
-    console.log(this.state.height, "is h2");
   }
   getGradients(obj) {
     let res = "";
@@ -24,7 +22,6 @@ export default class Background extends React.Component {
     return res;
   }
   render() {
-    console.log(this.state.height);
     return (
       <React.Fragment>
         <div
@@ -32,10 +29,11 @@ export default class Background extends React.Component {
           style={{
             background: this.state.color,
             height: this.state.height,
-            maxHeight: this.state.height,
           }}
         ></div>
         <div id="staticBg"></div>
+
+        {this.props.children}
       </React.Fragment>
     );
   }

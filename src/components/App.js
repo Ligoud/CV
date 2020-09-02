@@ -31,7 +31,6 @@ export default class App extends React.Component {
     let content = <Content page={this.state.chosenPage} />;
     let clr1 = "#54a0ff",
       clr2 = "#ff9f43"; //Цвета для градиента на фоне. Сделать в бг надо обработку по всем надо сделать
-    console.log(this.state.bgH);
     return (
       <React.Fragment>
         <CircleNav changePage={this.changePage} />
@@ -39,8 +38,10 @@ export default class App extends React.Component {
           key={this.state.bgH}
           linearGradient={{ color1: clr1, color2: clr2 }}
           heightInPages={this.state.bgH}
-        />
-        {content}
+        >
+          {content}
+        </Background>
+        {/* {content} */}
       </React.Fragment>
     );
   }
