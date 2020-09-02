@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.0c790d53.chunk.css",
-    "main.js": "/CV/static/js/main.07061d62.chunk.js",
-    "main.js.map": "/CV/static/js/main.07061d62.chunk.js.map",
+    "main.css": "/CV/static/css/main.9514d5d2.chunk.css",
+    "main.js": "/CV/static/js/main.cf3d951a.chunk.js",
+    "main.js.map": "/CV/static/js/main.cf3d951a.chunk.js.map",
     "runtime-main.js": "/CV/static/js/runtime-main.4d0d12ac.js",
     "runtime-main.js.map": "/CV/static/js/runtime-main.4d0d12ac.js.map",
-    "static/js/2.58934c54.chunk.js": "/CV/static/js/2.58934c54.chunk.js",
-    "static/js/2.58934c54.chunk.js.map": "/CV/static/js/2.58934c54.chunk.js.map",
+    "static/js/2.831127cc.chunk.js": "/CV/static/js/2.831127cc.chunk.js",
+    "static/js/2.831127cc.chunk.js.map": "/CV/static/js/2.831127cc.chunk.js.map",
     "index.html": "/CV/index.html",
-    "precache-manifest.c5c82d8ccd5182eab7ffb2b0f172fd58.js": "/CV/precache-manifest.c5c82d8ccd5182eab7ffb2b0f172fd58.js",
+    "precache-manifest.f8cb559e1c5cb0c20403a4e4f33ca73a.js": "/CV/precache-manifest.f8cb559e1c5cb0c20403a4e4f33ca73a.js",
     "service-worker.js": "/CV/service-worker.js",
-    "static/css/main.0c790d53.chunk.css.map": "/CV/static/css/main.0c790d53.chunk.css.map",
-    "static/js/2.58934c54.chunk.js.LICENSE.txt": "/CV/static/js/2.58934c54.chunk.js.LICENSE.txt",
-    "static/media/background.scss": "/CV/static/media/Pines&Mountains.6e918813.svg"
+    "static/css/main.9514d5d2.chunk.css.map": "/CV/static/css/main.9514d5d2.chunk.css.map",
+    "static/js/2.831127cc.chunk.js.LICENSE.txt": "/CV/static/js/2.831127cc.chunk.js.LICENSE.txt",
+    "static/media/background.scss": "/CV/static/media/Pines&Mountains.6e918813.svg",
+    "static/media/aboutMe.md": "/CV/static/media/aboutMe.11655939.md",
+    "static/media/adptvtest.md": "/CV/static/media/adptvtest.7b6291e8.md",
+    "static/media/avatar.jpg": "/CV/static/media/avatar.c04f5e19.jpg",
+    "static/media/cv.md": "/CV/static/media/cv.1af6570a.md",
+    "static/media/discordgm.md": "/CV/static/media/discordgm.7ef2f4dd.md",
+    "static/media/ofm.md": "/CV/static/media/ofm.babcbbae.md",
+    "static/media/prettycomponents.md": "/CV/static/media/prettycomponents.0018f4d2.md",
+    "static/media/roflochat.md": "/CV/static/media/roflochat.8e35dbd8.md",
+    "static/media/twitchextension.md": "/CV/static/media/twitchextension.e9ecdda7.md",
+    "static/media/weblog.md": "/CV/static/media/weblog.0b489926.md"
   },
   "entrypoints": [
     "static/js/runtime-main.4d0d12ac.js",
-    "static/js/2.58934c54.chunk.js",
-    "static/css/main.0c790d53.chunk.css",
-    "static/js/main.07061d62.chunk.js"
+    "static/js/2.831127cc.chunk.js",
+    "static/css/main.9514d5d2.chunk.css",
+    "static/js/main.cf3d951a.chunk.js"
   ]
 }
