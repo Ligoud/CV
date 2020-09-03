@@ -99,6 +99,8 @@ body {
   }
   #personalInfo {
     height: 300px;
+    min-width: 300px;
+    flex-grow: 1;
   }
   #photoSection {
     margin-bottom: 10%;
@@ -129,5 +131,6 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    height: 90%;
   }
 }
