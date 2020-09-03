@@ -23,14 +23,15 @@ export default class ProjectsPage extends React.Component {
     // let card = document.querySelector("#ulWrap");
     //
     // console.log(card);
-    card.style.animationPlayState = "running";
-    setTimeout(
-      (trgt) => {
-        trgt.parentNode.style.display = "none"; //ul display none
-      },
-      1500,
-      target
-    );
+    // card.style.animationPlayState = "running";
+    card.style.display = "none"; //ul display none
+    // setTimeout(
+    //   (trgt) => {
+    //     trgt.parentNode.style.display = "none"; //ul display none
+    //   },
+    //   1500,
+    //   target
+    // );
     //
     //
     let projectBody = document.getElementsByClassName("detailedProj")[0];

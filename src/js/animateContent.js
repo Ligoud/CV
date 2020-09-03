@@ -28,7 +28,7 @@ export default class CustomAnimations {
         0,
         require("../textData/txtinfo.json").projectInfo,
         this.pRef,
-        50
+        25
       );
     }
   }
