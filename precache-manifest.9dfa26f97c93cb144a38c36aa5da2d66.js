@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "661999a659bd98dc589f2ad94e9a3023",
+    "revision": "435eb70d5a19000ebb3a9fae564ac673",
     "url": "/CV/index.html"
   },
   {
-    "revision": "ade239030a4bb32172ee",
+    "revision": "d91d2e1dc3c66c42f106",
     "url": "/CV/static/css/main.2a5de95e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/js/2.831127cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ade239030a4bb32172ee",
-    "url": "/CV/static/js/main.3f685d99.chunk.js"
+    "revision": "d91d2e1dc3c66c42f106",
+    "url": "/CV/static/js/main.427cceee.chunk.js"
   },
   {
     "revision": "e4d273214469930d29bd",
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/discordgm.7ef2f4dd.md"
   },
   {
-    "revision": "babcbbae135dadd77991f8fcfd848f30",
-    "url": "/CV/static/media/ofm.babcbbae.md"
+    "revision": "03a6cdda2673ead356e9473368285d47",
+    "url": "/CV/static/media/ofm.03a6cdda.md"
   },
   {
-    "revision": "0018f4d250f41d03e846d69a8f72d82d",
-    "url": "/CV/static/media/prettycomponents.0018f4d2.md"
+    "revision": "c2bf50b62a99169cef58962b7d3154f0",
+    "url": "/CV/static/media/prettycomponents.c2bf50b6.md"
   },
   {
     "revision": "8e35dbd827c7d3c404e7ebb35f9cb1df",
@@ -64,7 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/media/twitchextension.e9ecdda7.md"
   },
   {
-    "revision": "0b48992618202bdbb3e4b99a097e2c0a",
-    "url": "/CV/static/media/weblog.0b489926.md"
+    "revision": "ac3af6396120b442689de8e46f29e6b1",
+    "url": "/CV/static/media/weblog.ac3af639.md"
   }
 ]);
