@@ -19,13 +19,22 @@ export default class ProjectsPage extends React.Component {
     //
     let projId = target.getAttribute("data-id");
     let projectText = await this.md.getHtml(projId + ".md");
-    let card = document.querySelector("#projectsPage > div");
+    let card = document.querySelector("#projectsPage > div ul");
+    // let card = document.querySelector("#ulWrap");
     //
-
+    // console.log(card);
     card.style.animationPlayState = "running";
-    target.parentNode.style.display = "none"; //ul display none
+    setTimeout(
+      (trgt) => {
+        trgt.parentNode.style.display = "none"; //ul display none
+      },
+      1500,
+      target
+    );
+    //
+    //
     let projectBody = document.getElementsByClassName("detailedProj")[0];
-    projectBody.removeAttribute("hidden");
+    // projectBody.removeAttribute("hidden");
 
     projectBody.getElementsByClassName("text")[0].innerHTML = projectText;
     projectBody.style.animationPlayState = "running";
@@ -56,14 +65,15 @@ export default class ProjectsPage extends React.Component {
       <React.Fragment key={new Date()}>
         <article id="projectsPage">
           <div ref={this.card} className="hideScrollBar">
-            <div className="detailedProj hideScrollBar" hidden>
+            <div className="detailedProj hideScrollBar">
               <div className="text hideScrollBar"></div>
               <div className="back" onClick={this.handleBack}>
                 <span>Обратно</span>
               </div>
             </div>
-
-            <ul className="mainList">{list}</ul>
+            <div id="ulWrap">
+              <ul className="mainList">{list}</ul>
+            </div>
           </div>
         </article>
       </React.Fragment>

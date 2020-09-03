@@ -23,26 +23,28 @@
     //
     overflow: hidden;
     overflow-y: scroll;
-
-    //
-    // * animation
-    //
-    -webkit-animation-name: turn;
-    animation-name: turn;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
     //
 
     ul.mainList {
       list-style-type: none;
       padding-left: 5%;
       padding-right: 5%;
+      //
+      // * animation
+      //
+      opacity: 1;
+      -webkit-animation-name: disappear;
+      animation-name: disappear;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+      //
+
       li {
         white-space: nowrap;
         overflow: hidden;
@@ -80,14 +82,15 @@
     }
 
     .detailedProj {
+      position: absolute;
       opacity: 0;
       margin: 5%;
       margin-top: 2%;
-      height: 93%;
+      margin-bottom: 0;
+      height: 95%;
       color: black;
 
       -webkit-animation-name: appear;
-
       animation-name: appear;
       -webkit-animation-duration: 2s;
       animation-duration: 2s;
@@ -117,6 +120,7 @@
         padding-left: 5px;
         height: 40px;
         width: 100px;
+        // margin-bottom: 10px;
 
         &:hover {
           background-color: rgba(128, 128, 128, 0.479);
@@ -133,20 +137,21 @@
     }
   }
 }
-@-webkit-keyframes turn {
+
+@-webkit-keyframes disappear {
   from {
+    opacity: 1;
   }
   to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+    opacity: 0;
   }
 }
-@keyframes turn {
+@keyframes disappear {
   from {
+    opacity: 1;
   }
   to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+    opacity: 0;
   }
 }
 @-webkit-keyframes appear {
@@ -158,6 +163,7 @@
   }
   to {
     opacity: 1;
+    position: relative;
   }
 }
 @keyframes appear {
@@ -169,6 +175,7 @@
   }
   to {
     opacity: 1;
+    position: relative;
   }
 }
 //
@@ -185,7 +192,8 @@
   #projectsPage {
     // background-color: black;
     & > div {
-      height: 300px;
+      // height: 300px;
+      margin-top: 100px;
     }
   }
 }
