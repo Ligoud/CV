@@ -21,7 +21,7 @@ export default class AboutPage extends React.Component {
           <div className="hideScrollBar">
             <section id="photoSection">
               <figure>
-                <img src={require("../../publicFiles/pepoG.jpg")} />
+                <img src={require("../../publicFiles/avatar.jpg")} />
                 <figcaption>
                   <span>Это Я, - Меретин Егор</span>
                 </figcaption>

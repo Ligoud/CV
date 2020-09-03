@@ -16,12 +16,13 @@
     opacity: 0.7;
 
     margin: 150px auto 0 auto;
-
+    //
     height: 700px;
     max-width: 50%;
     min-width: 300px;
     //
     overflow: hidden;
+    overflow-y: scroll;
 
     //
     // * animation
@@ -171,3 +172,20 @@
   }
 }
 //
+
+@media screen and (max-height: 900px) {
+  #projectsPage {
+    // background-color: black;
+    & > div {
+      height: 500px;
+    }
+  }
+}
+@media screen and (max-height: 650px) {
+  #projectsPage {
+    // background-color: black;
+    & > div {
+      height: 300px;
+    }
+  }
+}
