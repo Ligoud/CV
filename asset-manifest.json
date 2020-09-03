@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CV/static/css/main.cc6f4254.chunk.css",
+    "main.css": "/CV/static/css/main.51450539.chunk.css",
     "main.js": "/CV/static/js/main.cf3d951a.chunk.js",
     "main.js.map": "/CV/static/js/main.cf3d951a.chunk.js.map",
     "runtime-main.js": "/CV/static/js/runtime-main.4d0d12ac.js",
@@ -8,9 +8,9 @@
     "static/js/2.831127cc.chunk.js": "/CV/static/js/2.831127cc.chunk.js",
     "static/js/2.831127cc.chunk.js.map": "/CV/static/js/2.831127cc.chunk.js.map",
     "index.html": "/CV/index.html",
-    "precache-manifest.5aedc55f4c7eedfd8588ef8e083d4d60.js": "/CV/precache-manifest.5aedc55f4c7eedfd8588ef8e083d4d60.js",
+    "precache-manifest.18c86b68d171104ac670cb2e5290a3a8.js": "/CV/precache-manifest.18c86b68d171104ac670cb2e5290a3a8.js",
     "service-worker.js": "/CV/service-worker.js",
-    "static/css/main.cc6f4254.chunk.css.map": "/CV/static/css/main.cc6f4254.chunk.css.map",
+    "static/css/main.51450539.chunk.css.map": "/CV/static/css/main.51450539.chunk.css.map",
     "static/js/2.831127cc.chunk.js.LICENSE.txt": "/CV/static/js/2.831127cc.chunk.js.LICENSE.txt",
     "static/media/background.scss": "/CV/static/media/Pines&Mountains.6e918813.svg",
     "static/media/aboutMe.md": "/CV/static/media/aboutMe.11655939.md",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.4d0d12ac.js",
     "static/js/2.831127cc.chunk.js",
-    "static/css/main.cc6f4254.chunk.css",
+    "static/css/main.51450539.chunk.css",
     "static/js/main.cf3d951a.chunk.js"
   ]
 }
