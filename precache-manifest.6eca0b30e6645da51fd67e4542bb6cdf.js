@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e815ee6cec5823637a5ec1455f75127a",
+    "revision": "8080fada7c4e42cad1001ef4aec88308",
     "url": "/CV/index.html"
   },
   {
-    "revision": "03f50940a2b4629a7c13",
+    "revision": "6fc8190db715e0ccc4ab",
     "url": "/CV/static/css/main.68e95b23.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CV/static/js/2.831127cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03f50940a2b4629a7c13",
-    "url": "/CV/static/js/main.d1624bfc.chunk.js"
+    "revision": "6fc8190db715e0ccc4ab",
+    "url": "/CV/static/js/main.d23577c1.chunk.js"
   },
   {
     "revision": "e4d273214469930d29bd",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e35dbd827c7d3c404e7ebb35f9cb1df",
     "url": "/CV/static/media/roflochat.8e35dbd8.md"
+  },
+  {
+    "revision": "c6d9952e638bd1e21554dd567ae8075d",
+    "url": "/CV/static/media/socketiochat.c6d9952e.md"
   },
   {
     "revision": "e9ecdda7639d4135290ff28e7c4e6349",
